@@ -14,6 +14,7 @@
     grid-area: 3/2/4/3;
     font-size: 80px;
     align-self: end;
+    font-family: 'Sofia';
 }
 
 .icons {
@@ -33,6 +34,7 @@
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 30px;
+    font-family: 'Raleway';
 }
 
 
@@ -40,7 +42,7 @@
 form input {
     width: 100%;
     height: 50px;
-    background-color: #b6b6b6;
+    background-color: #D2D4D4;
     border: 1px solid white;
     border-radius: 10px;
     margin-top: 20px;
@@ -54,7 +56,7 @@ form {
 
 .msg {
     width: 100%;
-    background-color: #b6b6b6;
+    background-color: #D2D4D4;
     border: 1px solid white;
     border-radius: 10px;
     margin-top: 20px;
@@ -64,10 +66,40 @@ form {
     height: 50px;
     width: 150px;
     margin-top: 15px;
-    background-color: orange;
+    background-color: rgb(255, 166, 0);
     border-radius: 5px;
     border:none;
     color: white;
     font-size: 20px;
     font-family: 'Sofia';
+    transition: all 0.3s;
+}
+
+.submit:hover {
+    background-color: rgb(237, 154, 0);
+}
+
+@media (max-width:481px) {
+    #contact {
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: 1fr 0.5fr 1fr 3fr;
+    }
+
+    .t-contact {
+        grid-area: 1/1/2/4;
+    }
+
+    .ltsc {
+        grid-area: 2/2/3/3;
+        font-size: 50px;
+    }
+
+    .icons {
+        grid-area: 3/2/4/3;;
+    }
+
+    form {
+        grid-area: 4/2/5/3;
+        align-self: start;
+    }
 }

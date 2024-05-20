@@ -35,5 +35,41 @@
     padding-right: 125px;
 }
 
+@media (max-width:481px) {
+    #hobbies {
+        grid-template-rows: 1fr 2fr 3fr 2fr 3fr;
+        grid-template-columns: 20px 1fr 20px;
+        width: 100%;
+    }
+
+    .t-hobbies {
+        grid-area: 1/1/2/4;
+    }
+
+    .ihb1 {
+        grid-area: 2/2/3/3;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .hb1 {
+        grid-area: 3/2/4/3;
+        height: 90%;
+        overflow: scroll;
+    }
+
+    .ihb2 {
+        grid-area: 4/2/5/3;
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .hb2 {
+        grid-area: 5/2/6/3;
+        height: 90%;
+        overflow: scroll;
+    }
+    
+}
 
 

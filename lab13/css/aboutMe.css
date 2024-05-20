@@ -3,6 +3,7 @@
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 125px 1fr 1fr 1fr 1fr 1fr 125px;
     height: 1000px;
+    background-color: #EBEDED;
 }
 
 .t-about {
@@ -19,10 +20,6 @@
     height: 80%;
 }
 
-.photo img {
-    height: 100px;
-}
-
 .info {
     grid-area: 2/4/5/7;
     align-self: center;
@@ -33,4 +30,29 @@
     font-family:'Raleway';
     font-size: 20px;
     border: 3px ;
+}
+
+@media (max-width:481px) {
+    #about-me {
+        grid-template-rows: 1fr 2fr 3fr;
+        grid-template-columns: 20px 1fr 20px;
+        width: 100%;
+    }
+
+    .t-about {
+        grid-area: 1/1/2/4;
+    }
+
+    .abti {
+        grid-area: 2/2/3/3;
+        width: 100%;
+        
+    }
+
+    .info {
+        grid-area: 3/2/4/3;
+        height: 90%;
+        overflow: scroll;
+        
+    }
 }
